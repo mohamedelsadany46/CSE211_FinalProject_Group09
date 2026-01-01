@@ -1,0 +1,84 @@
+/*
+  ID & Name:        Youssef Atta Mohamed - 223103574, Mohamed Ahmed Mohamed - 224200083, Wahballah ahmed wahballah - 221100971, Ziad Abdullah - 221101546
+  Course:           CSE211 Web Programming
+  Assignment:       Course Project
+  Date:             30/12/2025
+  Description:      Responsive design with media queries for mobile, tablet, and desktop
+*/
+
+/* ========== DESKTOP (Default - 1025px and above) ========== */
+/* Already styled in main.css */
+
+/* ========== TABLET (769px - 1024px) ========== */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  nav#main-navigation ul {
+    gap: 0.75rem;
+  }
+
+  .two-column-layout {
+    flex-direction: column;
+  }
+}
+
+/* ========== MOBILE (up to 768px) ========== */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  /* Stack navigation vertically */
+  nav#main-navigation ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav#main-navigation ul li a {
+    display: block;
+    text-align: center;
+  }
+
+  /* Stack two-column layout */
+  .two-column-layout {
+    flex-direction: column;
+  }
+
+  /* Responsive table */
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+  }
+
+  td {
+    display: block;
+    text-align: right;
+    padding: 0.5rem;
+  }
+
+  td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+
+  /* Footer stack */
+  .footer-content {
+    flex-direction: column;
+  }
+}

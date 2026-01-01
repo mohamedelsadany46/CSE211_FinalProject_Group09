@@ -1,0 +1,149 @@
+<!--
+  ID & Name:        Youssef Atta Mohamed - 223103574, Mohamed Ahmed Mohamed - 224200083, Wahballah ahmed wahballah - 221100971, Ziad Abdullah - 221101546
+  Course:           CSE211 Web Programming
+  Assignment:       Course Project
+  Date:             30/12/2025
+  Description:      Events listing page with table of upcoming events
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse upcoming events">
+  <meta name="keywords" content="events, calendar, upcoming">
+  <meta name="author" content="Your Full Name">
+  
+  <title>Events - EventsX</title>
+  
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body>
+  <!-- ========== HEADER SECTION ========== -->
+  <header>
+    <h1>EventsX</h1>
+    <nav id="main-navigation" role="navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="budget-calculator.html">Budget Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.cairo.edu.eg" target="_blank" rel="noopener noreferrer">Cairo University</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== BREADCRUMB ========== -->
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <a href="../index.html">Home</a> &gt; Events
+  </nav>
+  <!-- ========== END BREADCRUMB ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+    <h1>Upcoming Events</h1>
+
+    <!-- Events Table -->
+    <section>
+      <h2>All Events</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tech Conference</td>
+            <td><time datetime="2026-01-20">January 20, 2026</time></td>
+            <td>Cairo</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>Music Festival</td>
+            <td><time datetime="2026-02-15">February 15, 2026</time></td>
+            <td>Alexandria</td>
+            <td>$75</td>
+          </tr>
+          <tr>
+            <td>Art Exhibition</td>
+            <td><time datetime="2026-03-10">March 10, 2026</time></td>
+            <td>Cairo</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>Business Summit</td>
+            <td><time datetime="2026-04-05">April 5, 2026</time></td>
+            <td>Giza</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>Sports Marathon</td>
+            <td><time datetime="2026-05-12">May 12, 2026</time></td>
+            <td>Cairo</td>
+            <td>$30</td>
+          </tr>
+          <tr>
+            <td>Digital Workshop</td>
+            <td><time datetime="2026-06-18">June 18, 2026</time></td>
+            <td>Giza</td>
+            <td>$80</td>
+          </tr>
+          <tr>
+            <td>Jazz Night</td>
+            <td><time datetime="2026-07-22">July 22, 2026</time></td>
+            <td>Cairo</td>
+            <td>$60</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER SECTION ========== -->
+  <footer>
+    <div class="footer-content">
+      <section class="footer-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-contact">
+        <h4>Contact</h4>
+        <address>
+          Email: <a href="mailto:info@eventsx.com">info@eventsx.com</a><br>
+          Phone: +20 100 000 0000
+        </address>
+      </section>
+
+      <section class="footer-social">
+        <h4>Social Media</h4>
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </section>
+    </div>
+
+    <p>© 2025 EventsX. All rights reserved. | Last Updated: <time datetime="2025-12-30">December 30, 2025</time></p>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/event-filter.js"></script>
+</body>
+</html>

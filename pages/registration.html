@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for events">
+  <meta name="keywords" content="registration, sign up, event">
+  <meta name="author" content="Your Full Name">
+  
+  <title>Registration - EventsX</title>
+  
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body>
+  <!-- ========== HEADER SECTION ========== -->
+  <header>
+    <h1>EventsX</h1>
+    <nav id="main-navigation" role="navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="budget-calculator.html">Budget Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.cairo.edu.eg" target="_blank" rel="noopener noreferrer">Cairo University</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== BREADCRUMB ========== -->
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <a href="../index.html">Home</a> &gt; Registration
+  </nav>
+  <!-- ========== END BREADCRUMB ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+    <h1>Event Registration</h1>
+
+    <section>
+      <h2>Register for an Event</h2>
+      <form id="registration-form" action="thank-you.html" method="post">
+        
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="3">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="event">Select Event:</label>
+        <select id="event" name="event" required>
+          <option value="">Choose an event</option>
+          <option value="tech">Tech Conference</option>
+          <option value="music">Music Festival</option>
+          <option value="art">Art Exhibition</option>
+          <option value="business">Business Summit</option>
+        </select>
+
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" min="1" max="10" value="1" required>
+
+        <label for="requirements">Special Requirements:</label>
+        <textarea id="requirements" name="requirements" rows="4"></textarea>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER SECTION ========== -->
+  <footer>
+    <div class="footer-content">
+      <section class="footer-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-contact">
+        <h4>Contact</h4>
+        <address>
+          Email: <a href="mailto:info@eventsx.com">info@eventsx.com</a><br>
+          Phone: +20 100 000 0000
+        </address>
+      </section>
+
+      <section class="footer-social">
+        <h4>Social Media</h4>
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </section>
+    </div>
+
+    <p>© 2025 EventsX. All rights reserved. | Last Updated: <time datetime="2025-12-30">December 30, 2025</time></p>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/form-validation.js"></script>
+</body>
+</html>

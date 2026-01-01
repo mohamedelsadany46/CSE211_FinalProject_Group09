@@ -1,0 +1,112 @@
+<!--
+  ID & Name:        Youssef Atta Mohamed - 223103574, Mohamed Ahmed Mohamed - 224200083, Wahballah ahmed wahballah - 221100971, Ziad Abdullah - 221101546
+  Course:           CSE211 Web Programming
+  Assignment:       Course Project
+  Date:             30/12/2025
+  Description:      Budget calculator page for event cost estimation
+-->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate your event budget">
+  <meta name="keywords" content="budget, calculator, event cost">
+  <meta name="author" content="Your Full Name">
+  
+  <title>Budget Calculator - EventsX</title>
+  
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body>
+  <!-- ========== HEADER SECTION ========== -->
+  <header>
+    <h1>EventsX</h1>
+    <nav id="main-navigation" role="navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="budget-calculator.html">Budget Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.cairo.edu.eg" target="_blank" rel="noopener noreferrer">Cairo University</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== BREADCRUMB ========== -->
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <a href="../index.html">Home</a> &gt; Budget Calculator
+  </nav>
+  <!-- ========== END BREADCRUMB ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+    <h1>Event Budget Calculator</h1>
+
+    <section>
+      <h2>Calculate Your Event Costs</h2>
+      <form id="budget-form">
+        
+        <label for="ticket">Ticket Cost ($):</label>
+        <input type="number" id="ticket" name="ticket" min="0" value="0" required>
+
+        <label for="travel">Travel Cost ($):</label>
+        <input type="number" id="travel" name="travel" min="0" value="0" required>
+
+        <label for="hotel">Accommodation Cost ($):</label>
+        <input type="number" id="hotel" name="hotel" min="0" value="0" required>
+
+        <button type="button" id="calculate-btn">Calculate Total</button>
+      </form>
+    </section>
+
+    <section id="result-section">
+      <h2>Total Budget</h2>
+      <p id="total-result">$0</p>
+    </section>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER SECTION ========== -->
+  <footer>
+    <div class="footer-content">
+      <section class="footer-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-contact">
+        <h4>Contact</h4>
+        <address>
+          Email: <a href="mailto:info@eventsx.com">info@eventsx.com</a><br>
+          Phone: +20 100 000 0000
+        </address>
+      </section>
+
+      <section class="footer-social">
+        <h4>Social Media</h4>
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </section>
+    </div>
+
+    <p>© 2025 EventsX. All rights reserved. | Last Updated: <time datetime="2025-12-30">December 30, 2025</time></p>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/budget-calculator.js"></script>
+</body>
+</html>

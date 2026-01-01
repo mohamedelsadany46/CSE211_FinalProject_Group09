@@ -1,0 +1,124 @@
+<!--
+  ID & Name:        Youssef Atta Mohamed - 223103574, Mohamed Ahmed Mohamed - 224200083, Wahballah ahmed wahballah - 221100971, Ziad Abdullah - 221101546
+  Course:           CSE211 Web Programming
+  Assignment:       Course Project
+  Date:             30/12/2025
+  Description:      Contact page with contact information and form
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact EventsX team">
+  <meta name="keywords" content="contact, email, phone, social media">
+  <meta name="author" content="Your Full Name">
+  
+  <title>Contact - EventsX</title>
+  
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body>
+  <!-- ========== HEADER SECTION ========== -->
+  <header>
+    <h1>EventsX</h1>
+    <nav id="main-navigation" role="navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="budget-calculator.html">Budget Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.cairo.edu.eg" target="_blank" rel="noopener noreferrer">Cairo University</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== BREADCRUMB ========== -->
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <a href="../index.html">Home</a> &gt; Contact
+  </nav>
+  <!-- ========== END BREADCRUMB ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+    <h1>Contact Us</h1>
+
+    <section>
+      <h2>Get in Touch</h2>
+      <address>
+        <p><strong>Email:</strong> <a href="mailto:info@eventsx.com">info@eventsx.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+201000000000">+20 100 000 0000</a></p>
+        <p><strong>Address:</strong> 123 Tahrir Street, Cairo, Egypt</p>
+      </address>
+    </section>
+
+    <section>
+      <h2>Social Media</h2>
+      <ul>
+        <li><a href="https://facebook.com/eventsx" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://twitter.com/eventsx" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a href="https://linkedin.com/company/eventsx" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://instagram.com/eventsx" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <form id="contact-form">
+        <label for="contact-name">Name:</label>
+        <input type="text" id="contact-name" name="name" required>
+
+        <label for="contact-email">Email:</label>
+        <input type="email" id="contact-email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER SECTION ========== -->
+  <footer>
+    <div class="footer-content">
+      <section class="footer-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-contact">
+        <h4>Contact</h4>
+        <address>
+          Email: <a href="mailto:info@eventsx.com">info@eventsx.com</a><br>
+          Phone: +20 100 000 0000
+        </address>
+      </section>
+
+      <section class="footer-social">
+        <h4>Social Media</h4>
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </section>
+    </div>
+
+    <p>© 2025 EventsX. All rights reserved. | Last Updated: <time datetime="2025-12-30">December 30, 2025</time></p>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

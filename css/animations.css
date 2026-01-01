@@ -1,0 +1,67 @@
+/*
+  ID & Name:        Youssef Atta Mohamed - 223103574, Mohamed Ahmed Mohamed - 224200083, Wahballah ahmed wahballah - 221100971, Ziad Abdullah - 221101546
+  Course:           CSE211 Web Programming
+  Assignment:       Course Project
+  Date:             30/12/2025
+  Description:      Animations, transitions, and hover effects for EventsX website
+*/
+
+/* ========== TRANSITIONS ========== */
+* {
+  transition: all 0.3s ease;
+}
+
+/* ========== BUTTON HOVER ANIMATION ========== */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ========== EVENT CARD HOVER ANIMATION ========== */
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  border-color: var(--primary);
+}
+
+/* ========== NAVIGATION LINK HOVER ========== */
+nav#main-navigation ul li a {
+  transition: all 0.3s ease;
+}
+
+/* ========== TABLE ROW HOVER ========== */
+tr:hover {
+  background-color: var(--light);
+}
+
+/* ========== INPUT FOCUS ========== */
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* ========== FADE IN ANIMATION ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 0.5s ease;
+}
+
+/* ========== IMAGE HOVER ========== */
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
