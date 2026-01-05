@@ -1,7 +1,12 @@
-/*
-  ID & Name:        Youssef Atta Mohamed - 223103574, Mohamed Ahmed Mohamed - 224200083, Wahballah ahmed wahballah - 221100971, Ziad Abdullah - 221101546
-  Course:           CSE211 Web Programming
-  Assignment:       Course Project
-  Date:             30/12/2025
-  Description:      Main JavaScript file for general DOM manipulation
-*/
+
+document.addEventListener("DOMContentLoaded", () => {
+ 
+  const links = document.querySelectorAll("#main-navigation a");
+  const currentPath = window.location.pathname;
+
+  links.forEach(link => {
+    if (currentPath.includes(link.getAttribute("href"))) {
+      link.classList.add("active");
+    }
+  });
+});
