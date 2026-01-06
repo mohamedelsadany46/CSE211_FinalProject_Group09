@@ -10,7 +10,7 @@
 $host = 'localhost';
 $dbname = 'eventsx_db';
 $username = 'root';
-$password = '';
+$password = 'web';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);

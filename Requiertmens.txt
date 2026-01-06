@@ -1,0 +1,86 @@
+Project Name: EventsX – Event Planning Platform
+Course: CSE211 Web Programming
+Assignment: Course Project
+Group: 09
+
+==============================
+SYSTEM & SOFTWARE REQUIREMENTS
+==============================
+
+1. Operating System
+   - Windows 10 or later
+   - macOS
+   - Linux
+
+2. Web Browser
+   - Google Chrome (recommended)
+   - Mozilla Firefox
+   - Microsoft Edge
+
+3. Development Tools
+   - Visual Studio Code
+   - Git (for version control)
+
+==============================
+FRONTEND TECHNOLOGIES
+==============================
+
+1. HTML5
+   - Semantic elements
+   - Forms, tables, lists, media
+
+2. CSS3
+   - Responsive design
+   - Animations
+   - Media queries
+
+3. JavaScript (ES6)
+   - Form validation
+   - Event handling
+   - Budget calculator logic
+
+==============================
+BACKEND TECHNOLOGIES
+==============================
+
+1. PHP (Version 8.0 or higher)
+   - Server-side form handling
+   - Database interaction
+
+2. MySQL
+   - Event data storage
+   - User registration records
+
+3. Apache Server
+   - Provided via XAMPP
+
+==============================
+LOCAL SERVER REQUIREMENTS
+==============================
+
+1. XAMPP
+   - Apache Server
+   - MySQL Database
+   - PHP
+
+2. phpMyAdmin
+   - Database management
+
+==============================
+ONLINE DEPLOYMENT
+==============================
+
+1. Static Hosting Platform
+   - tiiny.host still in check
+
+Note:
+Backend functionality is demonstrated locally using PHP and MySQL.
+For online deployment, backend responses are simulated using JSON files
+due to static hosting limitations.
+
+==============================
+TOOLS
+==============================
+
+- GitHub (project repository)
+- MySQL Workbench
