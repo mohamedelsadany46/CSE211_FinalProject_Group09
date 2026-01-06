@@ -7,15 +7,16 @@
   Description:      Database configuration and connection
 */
 
-$host = 'localhost';
-$dbname = 'eventsx_db';
-$username = 'root';
-$password = 'web';
+<?php
+$host = "127.0.0.1";
+$user = "root";
+$pass = "web";          // the password you set
+$db   = "eventsx_db";
+$port = 3306;           // change to 3307 ONLY if you changed MySQL port
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e) {
-    die("Connection failed: " . $e->getMessage());
+$conn = new mysqli($host, $user, $pass, $db, $port);
+
+if ($conn->connect_error) {
+    die("Database connection failed: " . $conn->connect_error);
 }
 ?>
